@@ -28,6 +28,8 @@ const TodoList = () => {
     const toggleComplete = (index) => {
         const temp = taskList;
         temp[index].completed = !temp[index].completed;
+        // console.log(temp);
+        
         setTaskList([...temp]);
     }
 
